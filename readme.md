@@ -13,7 +13,10 @@ Generate access token:
 
 # Scrapper
 Edit `config.ini` and fill all required data
-Run `setup.sh` as root
+Edit `crontab -e`
+
+`0 * * * * python3 /home/jarek/solaredge-scrapper/solaredge_to_influx.py`
+
 
 # Grafana
 `docker run -d --restart=always --name=grafana -p 3000:3000 grafana/grafana`
