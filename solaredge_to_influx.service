@@ -1,8 +1,0 @@
-[Unit]
-Description=Load Solaredge data to influx
-
-[Service]
-User=root
-Restart=always
-RestartSec=3600s
-ExecStart=python3 /usr/scrapper/solaredge_to_influx.py
