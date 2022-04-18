@@ -15,7 +15,7 @@ Generate access token:
 Edit `config.ini` and fill all required data
 Edit `crontab -e`
 
-`0 * * * * python3 /home/jarek/solaredge-scrapper/solaredge_to_influx.py`
+`0 * * * * python3 /solaredge-scrapper/solaredge_to_influx.py`
 
 
 # Grafana
