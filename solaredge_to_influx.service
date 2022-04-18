@@ -2,7 +2,7 @@
 Description=Load Solaredge data to influx
 
 [Service]
-User=%I
+User=root
 Restart=always
 RestartSec=3600s
-ExecStart=/bin/bash /usr/scrapper/solaredge_to_influx.py
+ExecStart=python3 /usr/scrapper/solaredge_to_influx.py
