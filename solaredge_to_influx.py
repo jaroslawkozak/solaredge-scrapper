@@ -12,7 +12,7 @@ parser.add_argument("-u", "--until", dest="until", default=datetime.today().strf
 args = parser.parse_args()
 
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read('./config.ini')
 
 api_key = config["solaredge"]["api_key"]
 installation_id = config["solaredge"]["installation_id"]
