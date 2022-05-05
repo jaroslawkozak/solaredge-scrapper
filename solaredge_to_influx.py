@@ -1,3 +1,4 @@
+import os
 import requests
 import configparser
 import json
@@ -12,7 +13,8 @@ parser.add_argument("-u", "--until", dest="until", default=datetime.today().strf
 args = parser.parse_args()
 
 config = configparser.ConfigParser()
-config.read('./config.ini')
+config_path = os.path.dirname(__file__) + '/config.ini'
+config.read(config_path)
 
 api_key = config["solaredge"]["api_key"]
 installation_id = config["solaredge"]["installation_id"]
